@@ -1,0 +1,407 @@
+.static-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--bck-color);
+
+  h1 {
+    font-size: 32px;
+    font-weight: 500;
+  }
+
+  .static-title {
+    margin: 50px 0;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+
+    button {
+      padding: 12px 32px;
+      border-radius: 50px;
+    }
+
+    h1 {
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 48px;
+    }
+
+    p {
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 27px;
+      color: var(--dark-color);
+    }
+
+    .selection {
+      display: flex;
+      gap: 20px;
+
+      button {
+        width: 175px;
+        height: 50px;
+        border: 1px solid var(--primary-color);
+        background-color: transparent;
+        color: #000;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        cursor: pointer;
+
+        &:hover {
+          background-color: var(--primary-color);
+        }
+      }
+    }
+  }
+
+  .static-container {
+    width: 90%;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .left {
+      height: 525px;
+      width: 49%;
+      border-radius: 10px;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+        border-radius: 10px;
+      }
+    }
+
+    .right {
+      background-color: #fff;
+      border-radius: 10px;
+      height: 425px;
+      padding: 50px;
+      width: calc(49% - 100px);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 50px;
+
+      h1 {
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+      }
+
+      p {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: normal;
+      }
+    }
+
+    .boxes {
+      display: flex;
+      gap: 50px;
+
+      .box {
+        h1 {
+          font-family: "manrope";
+          font-size: 48px;
+          font-style: normal;
+          font-weight: 600;
+          line-height: normal;
+        }
+
+        p {
+          font-family: "manrope";
+          font-size: 16px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
+    }
+  }
+
+  .about-com {
+    width: 100%;
+    height: 450px;
+    margin: 50px 0;
+
+    .about-card {
+      height: 100%;
+      width: 100%;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+
+  .team {
+    margin: 50px 0;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .contact {
+    margin: 20px 0 50px 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 20px 0;
+      border-top: 1px solid var(--dark-color);
+      border-bottom: 1px solid var(--dark-color);
+
+      .box {
+        height: 40px;
+        width: 33%;
+        border-right: 1px solid var(--dark-color);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        p {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+
+        &:last-child {
+          border-right: none;
+        }
+      }
+    }
+
+    .hero {
+      margin: 50px 0;
+      width: 100%;
+      height: 600px;
+      display: flex;
+      justify-content: space-between;
+
+      .left {
+        width: 30%;
+
+        form {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 20px;
+          font-family: "poppins";
+
+          input {
+            width: calc(100% - 30px);
+            height: 60px;
+            padding: 0 15px;
+            background-color: transparent;
+            border-radius: 50px;
+            border: 1px solid var(--dark-color);
+          }
+
+          textarea {
+            width: calc(100% - 30px);
+            height: 150px;
+            padding: 10px 15px;
+            border-radius: 20px;
+            background-color: transparent;
+            border: 1px solid var(--dark-color);
+            resize: none;
+          }
+
+          button {
+            width: 200px;
+            height: 60px;
+            border-radius: 50px;
+          }
+        }
+      }
+
+      .right {
+        width: 67%;
+
+        iframe {
+          width: 100%;
+          height: 100%;
+          border: none;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .static-wrapper {
+    h1 {
+      font-size: 26px;
+      line-height: 40px;
+    }
+
+    .static-title {
+      margin: 20px 0;
+      height: 100%;
+      width: 80%;
+      gap: 20px;
+
+      button {
+        padding: 12px 32px;
+        border-radius: 50px;
+      }
+
+      h1 {
+        font-size: 26px;
+        line-height: 40px;
+      }
+
+      p {
+        font-size: 16px;
+        line-height: 24px;
+      }
+
+      .selection {
+        button {
+          width: 150px;
+          height: 50px;
+        }
+      }
+    }
+
+    .static-container {
+      margin: 20px 0;
+      flex-direction: column;
+      gap: 20px;
+
+      .left {
+        height: 350px;
+        width: 100%;
+      }
+
+      .right {
+        height: 100%;
+        padding: 20px;
+        width: calc(100% - 40px);
+        gap: 10px;
+
+        h1 {
+          font-size: 24px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+
+      .boxes {
+        gap: 0px;
+        justify-content: space-between;
+
+        .box {
+          h1 {
+            font-size: 30px;
+          }
+
+          p {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .about-com {
+      height: 100%;
+      margin: 30px 0;
+    }
+
+    .team {
+      margin: 30px 0;
+      width: 90%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .contact {
+      margin: 20px 0 0 0;
+
+      .header {
+        flex-direction: column;
+        padding: 0px 0;
+
+        .box {
+          height: 40px;
+          width: 100%;
+          border-right: none;
+          border-bottom: 1px solid var(--dark-color);
+
+          p {
+            font-size: 16px;
+          }
+
+          &:last-child {
+            border-bottom: none;
+          }
+        }
+      }
+
+      .hero {
+        margin: 30px 0;
+        height: 100%;
+        flex-direction: column;
+
+        .left {
+          width: 100%;
+
+          form {
+            gap: 10px;
+
+            input {
+              height: 50px;
+            }
+
+            textarea {
+              height: 120px;
+            }
+
+            button {
+              width: 100%;
+              height: 50px;
+            }
+          }
+        }
+
+        .right {
+          margin-top: 30px;
+          width: 100%;
+          height: 300px;
+        }
+      }
+    }
+  }
+}

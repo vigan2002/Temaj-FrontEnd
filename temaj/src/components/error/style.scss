@@ -1,0 +1,27 @@
+.error-container{
+  width: 100%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bck-color);
+  padding-top: 120px;
+  h1 {
+    font-size: 24px;
+  }
+
+  p {
+    font-size: 16px;
+    color: var(--dark-color);
+    margin: 10px 0 20px 0;
+  }
+  .btns{
+    display: flex;
+    gap: 20px;
+    button{
+      padding: 12px 32px;
+      border-radius: 50px;
+    }
+  }
+}

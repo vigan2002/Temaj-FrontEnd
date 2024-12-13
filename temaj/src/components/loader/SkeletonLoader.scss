@@ -1,0 +1,25 @@
+/* src/components/SkeletonLoader.scss */
+.skeleton-wrapper {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .skeleton-left {
+    flex: 1;
+  }
+  
+  .skeleton-thumbnails {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  .skeleton-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  

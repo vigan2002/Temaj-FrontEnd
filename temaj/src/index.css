@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* scroll-behavior: smooth; */
+}
+
+:root {
+    --bck-color: #F3F2EF;
+    --primary-color: #ffba00;
+    --white-color: #ffffff;
+    --darker-color: #333333;
+    --dark-color: #acacac;
+    --light-color: #E7E7E7;
+}
+
+@font-face {
+    font-family: 'autography';
+    src: url('/assets/fonts/Autography.otf');
+}
+
+h1, h2 {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-family: "Poppins", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    color: #000;
+}
+
+button {
+    font-family: "Poppins", sans-serif;
+}
+
+input, textarea, label {
+    font-family: "Poppins", sans-serif;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+textarea:focus, input:focus{
+    outline: none;
+}
+
+button, input, select, textarea {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    -webkit-tap-highlight-color: transparent; 
+  }
+
+
+.primary-btn {
+    border: 1px solid var(--primary-color);
+    background-color: var(--primary-color);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.white-btn {
+    border: 1px solid var(--white-color);
+    background-color: var(--white-color);
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.dark-btn {
+    border: 1px solid var(--bck-color);
+    background-color: var(--bck-color);
+    color: var(--darker-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.darker-btn {
+    border: 1px solid var(--darker-color);
+    background-color: var(--darker-color);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.light-btn {
+    border: 1px solid var(--light-color);
+    background-color: var(--light-color);
+    color: var(--darker-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.transparent-btn {
+    border: 1px solid var(--primary-color);
+    background-color: transparent;
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.transparentWh-btn {
+    border: 1px solid var(--white-color);
+    background-color: transparent;
+    color: var(--white-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.transparentD-btn {
+    border: 1px solid var(--dark-color);
+    background-color: transparent;
+    color: var(--dark-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.transparentB-btn {
+    border: 1px solid #000;
+    background-color: transparent;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.whatsapp-btn {
+    border: 1px solid #2BB740;
+    background-color: #2BB740;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}

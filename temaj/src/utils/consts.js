@@ -1,0 +1,25 @@
+export const BASE_URL = 'https://api.temaj.eu/';
+export const MEDIA_URL = 'https://api.temaj.eu';
+// export const BASE_URL = 'http://37.60.255.244:8000/';
+
+export const loginUrl = `${BASE_URL}login/`;
+export const signupUrl = `${BASE_URL}signup/`;
+export const forgotUrl = `${BASE_URL}forgot-password/ `;
+export const productsUrl = `${BASE_URL}products/`;
+export const bannersUrl = `${BASE_URL}banners/`;
+export const galleryUrl = `${BASE_URL}images/`;
+export const profileUrl = `${BASE_URL}profile/`;
+export const categoriesUrl = `${BASE_URL}products/categories/`;
+export const newestProductsUrl = `${BASE_URL}products/newest/`;
+export const bestSellersUrl = `${BASE_URL}products/best-sellers/`;
+export const brandProductsUrl = `${BASE_URL}products/brands/`;
+export const singleProductUrl = `${BASE_URL}products`;
+export const onSaleUrl = `${BASE_URL}products/on-sale/`;
+export const wishlistUrl = `${BASE_URL}user/wishlist/`;
+export const cartUrl = `${BASE_URL}user/cart/`;
+export const relatedProductsUrl = `${BASE_URL}products/`;
+export const orderUrl = `${BASE_URL}orders/`;
+export const receiptUrl = `${BASE_URL}user/order/`;
+export const filtersUrl = `${BASE_URL}filters/`;
+export const admPendingOrder = `${BASE_URL}administrator/pending-orders/`;
+export const admPendingProm = `${BASE_URL}administrator/pending-promotion/`;

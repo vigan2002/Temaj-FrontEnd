@@ -1,0 +1,856 @@
+.about-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+
+  .about-container {
+    width: 90%;
+    height: 800px;
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    .left {
+      width: 55%;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      h1 {
+        font-family: "baskervville";
+        font-size: 55px;
+        font-weight: 400;
+        line-height: 72px;
+      }
+
+      p {
+        font-size: 18px;
+        font-weight: 300;
+        line-height: 27px;
+        opacity: 0.6;
+      }
+
+      button {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        padding: 12px 32px 12px 0;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        cursor: pointer;
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+
+    .right {
+      width: 40%;
+      height: 100%;
+
+      video, img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.win-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #fff;
+
+  .win-container {
+    width: 90%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 50px;
+
+    .win-title {
+      h1 {
+        font-size: 55px;
+        font-weight: 400;
+        line-height: 71.12px;
+        font-family: "baskervville";
+      }
+    }
+
+    .win-category {
+      width: 100%;
+      height: 800px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: flex-end;
+      color: #fff;
+      background-position: center;
+      background-size: cover;
+
+      .category-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-left: 5%;
+        height: 10%;
+        width: 90%;
+
+        button {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 27px;
+          color: #fff;
+          background-color: transparent;
+          border: none;
+          padding: 12px 32px;
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          cursor: pointer;
+
+          img {
+            height: 20px;
+          }
+        }
+
+        h1 {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+        }
+      }
+    }
+
+    .win-work {
+      width: 100%;
+      height: 600px;
+      display: flex;
+      video, img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        object-position: center;
+      }
+    }
+
+    .win-btn {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      button {
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 27px;
+        color: #000;
+        background-color: transparent;
+        border: none;
+        padding: 12px 32px;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        cursor: pointer;
+
+        img {
+          height: 20px;
+        }
+      }
+    }
+  }
+}
+
+.contact-win {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  color: #fff;
+  padding: 50px 0;
+
+  .contact-win-title {
+    width: 90%;
+
+    h1 {
+      font-family: "baskervville";
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .contact-win-container {
+    width: 90%;
+    height: 100%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    .left {
+      width: 30%;
+      height: 100%;
+
+      form {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        font-family: "poppins";
+
+        div {
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+
+          label {
+            color: var(--primary-color);
+            font-family: "poppins";
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          input {
+            width: calc(100% - 30px);
+            background-color: transparent;
+            color: #fff;
+            height: 60px;
+            padding: 0 15px;
+            border: 1px solid var(--dark-color);
+            color: var(--butoncolor, #d9d9d9);
+            font-family: "poppins";
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+          }
+
+          textarea {
+            width: calc(100% - 30px);
+            background-color: transparent;
+            color: #fff;
+            height: 150px;
+            padding: 10px 15px;
+            border: 1px solid var(--dark-color);
+            resize: none;
+            font-family: Poppins;
+            font-size: 16px;
+            font-weight: 500;
+            line-height: normal;
+          }
+        }
+
+        button {
+          font-size: 18px;
+          font-weight: 600;
+          line-height: 27px;
+          color: #fff;
+          background-color: transparent;
+          border: none;
+          padding: 12px 32px 12px 0;
+          display: flex;
+          align-items: center;
+          gap: 40px;
+          cursor: pointer;
+          text-transform: uppercase;
+
+          img {
+            height: 20px;
+          }
+        }
+
+        h1 {
+          font-size: 18px;
+          font-weight: 500;
+          line-height: 27px;
+        }
+      }
+    }
+
+    .right {
+      width: 50%;
+      height: 100%;
+
+      iframe, img {
+        width: 100%;
+        height: calc(100vh - 150px);
+        object-fit: contain;
+        object-position: center;
+      }
+    }
+  }
+}
+
+.testimonials-wrapper {
+  width: 100%;
+  height: calc(100vh - 100px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #000;
+  padding: 50px 0;
+  gap: 50px;
+
+  .testimonials-title {
+    width: 90%;
+
+    h1 {
+      font-family: "baskervville";
+      font-size: 55px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+
+  .testimonials-container {
+    height: 100%;
+    width: 90%;
+
+    .carousel-wrapper {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+
+      .testimonials-card {
+        border: 1px solid var(--primary-color);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 50px;
+        padding: 50px;
+        height: 400px;
+
+        .rates {
+          p {
+            font-size: 19.001px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: 100%;
+            letter-spacing: 2.714px;
+            text-transform: uppercase;
+          }
+        }
+
+        p {
+          font-size: 18px;
+          font-style: normal;
+          font-weight: 300;
+          line-height: normal;
+        }
+
+        h1 {
+          color: #172f13;
+          text-align: center;
+          font-size: 27.144px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: 100%;
+        }
+
+        transition: 0.3s all;
+
+        &:hover {
+          background-color: var(--primary-color);
+          box-shadow: 5px 10px 80px 0px rgba(23, 47, 19, 0.16);
+          scale: 1.03;
+        }
+      }
+
+      .testimonials-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 50px;
+        gap: 70px;
+
+        button {
+          background-color: transparent;
+          border: none;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          cursor: pointer;
+
+          img {
+            height: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.banner-win {
+  height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(
+                  0deg,
+                  rgba(0, 0, 0, 0.7) 60%,
+                  rgba(0, 0, 0, 0) 100%
+  ),
+  url("/assets/images/content/windoor-banner-display.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  .banner-container {
+    color: #fff;
+    top: 40%;
+    left: 5%;
+    position: absolute;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    h1 {
+      font-family: "baskervville";
+      font-size: 105.726px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    p {
+      color: rgba(255, 255, 255, 0.38);
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 300;
+      line-height: normal;
+    }
+
+    button {
+      font-size: 18px;
+      font-weight: 600;
+      line-height: 27px;
+      color: #fff;
+      background-color: transparent;
+      border: none;
+      padding: 12px 32px 12px 0;
+      display: flex;
+      align-items: center;
+      gap: 40px;
+      cursor: pointer;
+
+      img {
+        height: 20px;
+      }
+    }
+  }
+
+  .socials {
+    width: 90%;
+    color: #fff;
+    top: 90%;
+    left: 5%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    a {
+      font-size: 20px;
+    }
+
+    .line {
+      height: 1px;
+      background-color: #fff;
+      width: 100%;
+    }
+  }
+}
+
+@media (max-width: 1600px) {
+  .about-wrapper {
+    .about-container {
+      height: 500px;
+      gap: 50px;
+
+      .left {
+        gap: 15px;
+
+        h1 {
+          font-size: 35px;
+          line-height: 50px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .win-wrapper {
+    .win-container {
+      .win-title {
+        h1 {
+          font-size: 35px;
+          line-height: 50px;
+        }
+      }
+
+      .win-category {
+        height: 500px;
+
+        .category-content {
+          h1 {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .win-work {
+        height: 450px;
+      }
+
+      .win-btn {
+        button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .contact-win {
+    height: 100%;
+
+    .contact-win-title {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+  .testimonials-wrapper {
+    .testimonials-title {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+  .banner-win {
+    .banner-container {
+      top: 40%;
+
+      h1 {
+        font-size: 70px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .about-wrapper {
+    .about-container {
+      height: 500px;
+      gap: 50px;
+
+      .left {
+        gap: 15px;
+
+        h1 {
+          font-size: 35px;
+          line-height: 50px;
+        }
+
+        p {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .win-wrapper {
+    .win-container {
+      .win-title {
+        h1 {
+          font-size: 35px;
+          line-height: 50px;
+        }
+      }
+
+      .win-category {
+        height: 500px;
+
+        .category-content {
+          h1 {
+            font-size: 16px;
+          }
+        }
+      }
+
+      .win-work {
+        height: 450px;
+      }
+
+      .win-btn {
+        button {
+          font-size: 16px;
+        }
+      }
+    }
+  }
+  .contact-win {
+    height: 100%;
+
+    .contact-win-title {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+  .testimonials-wrapper {
+    .testimonials-title {
+      h1 {
+        font-size: 35px;
+      }
+    }
+  }
+  .banner-win {
+    .banner-container {
+      top: 40%;
+      width: 80%;
+
+      h1 {
+        font-size: 50px;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .about-wrapper {
+    .about-container {
+      margin: 20px 0;
+      height: 100%;
+      gap: 20px;
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+        gap: 10px;
+
+        h1 {
+          font-size: 30px;
+          line-height: 50px;
+        }
+
+        p {
+          font-size: 16px;
+          line-height: 24px;
+        }
+
+        button {
+          font-size: 16px;
+          line-height: 24px;
+          color: #fff;
+        }
+      }
+
+      .right {
+        width: 100%;
+        height: 350px;
+      }
+    }
+  }
+  .win-wrapper {
+    .win-container {
+      margin: 20px 0;
+      gap: 20px;
+
+      .win-title {
+        h1 {
+          font-size: 30px;
+          line-height: 50px;
+        }
+      }
+
+      .win-category {
+        height: 400px;
+
+        .category-content {
+          height: 20%;
+        }
+      }
+
+      .win-work {
+        height: 300px;
+      }
+    }
+  }
+  .contact-win {
+    .contact-win-title {
+      width: 90%;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    .contact-win-container {
+      width: 90%;
+      height: 100%;
+      margin-top: 20px;
+      flex-direction: column;
+
+      .left {
+        width: 100%;
+
+        form {
+          gap: 20px;
+
+          div {
+            gap: 5px;
+
+            label {
+              font-size: 16px;
+            }
+
+            input {
+              height: 50px;
+            }
+
+            textarea {
+              height: 120px;
+              padding: 10px 15px;
+            }
+          }
+
+          button {
+            font-size: 16px;
+            gap: 30px;
+
+            img {
+              height: 15px;
+            }
+          }
+
+          h1 {
+            font-size: 18px;
+            font-weight: 500;
+            line-height: 27px;
+          }
+        }
+      }
+
+      .right {
+        margin-top: 50px;
+        width: 100%;
+      }
+    }
+  }
+  .testimonials-wrapper {
+    padding: 0;
+    height: 550px;
+    gap: 30px;
+
+    .testimonials-title {
+      width: 90%;
+
+      h1 {
+        font-size: 30px;
+      }
+    }
+
+    .testimonials-container {
+      height: 350px;
+
+      .carousel-wrapper {
+        height: 120%;
+        gap: 20px;
+
+        .testimonials-card {
+          gap: 30px;
+          padding: 30px;
+          height: 300px;
+
+          .rates {
+            p {
+              font-size: 16px;
+            }
+          }
+
+          p {
+            font-size: 16px;
+          }
+
+          h1 {
+            font-size: 22px;
+          }
+
+          &:hover {
+            background-color: transparent;
+            box-shadow: none;
+            scale: 1;
+          }
+        }
+
+        .testimonials-nav {
+          height: 30px;
+          gap: 30px;
+
+          button {
+            img {
+              height: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+  .banner-win {
+    height: 100vh;
+    width: 100%;
+
+    .banner-container {
+      width: 80%;
+
+      h1 {
+        font-size: 30px;
+      }
+
+      p {
+        font-size: 16px;
+      }
+
+      button {
+        font-size: 16px;
+
+        img {
+          height: 15px;
+        }
+      }
+    }
+
+    .socials {
+      gap: 20px;
+    }
+  }
+}
